@@ -7,7 +7,7 @@
         '$resource',
         function($resource) {
             return $resource('/api/pupils/', {}, {
-                query: { method: 'GET', params: {}, isArray: true }
+                query: { method: 'GET'}
             });
         }
     ]);

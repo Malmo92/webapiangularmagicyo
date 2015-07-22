@@ -12,7 +12,9 @@
         //var vm = this;
         $scope.title = 'pupilsController';
 
+        $scope.pupils = Pupils.query();
 
+        alert($scope.pupils[0]);
 
         //vm.title = 'pupilsController';
 
