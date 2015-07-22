@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Registrering</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="app.js"></script>
+    <!--<script src="lib/angularjs/angular.js"></script>-->
+</head>
+<body>
+<div ng-controller="pupilsController">
+    <h1>{{title}}</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Fornavn</th>
+            <th>Etternavn</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="pupil in pupils">
+            <td>{{pupil.firstname}}</td>
+            <td>{{pupil.lastname}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
